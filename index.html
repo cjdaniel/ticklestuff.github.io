@@ -22,6 +22,7 @@ font.header {
     font-size:40pt;
     line-height:20px;
     font-family: Arial Black;
+    text-shadow: 2px 2px 10px white;
 }
 font.disclaimer {
     font-size:12pt;
@@ -92,8 +93,11 @@ table td {
     font-size: 14pt;
     background-color: white;
 }
-td.buy {
+td.lightgrey {
     background-color: lightgrey;
+}
+td.buy {
+    background-color: white;
 }
 tbody tr td.cnt:first-child::before {
     content: counter(rowNumber);
@@ -105,17 +109,6 @@ p.title {
     text-wrap: none;
     vertical-align: middle;
     white-space: nowrap;
-}
-.circle
-    {
-    width:15px;
-    height:15px;
-    border-radius:7px;
-    font-size:14pt;
-    color:black;
-    line-height:15px;
-    text-align:center;
-    background:white
 }
 body { 
     min-height: 100%;
@@ -161,9 +154,9 @@ body {
 <CENTER>
 <TABLE>
 <TR>
-<TD CLASS="buy"><FONT CLASS="header">SpaceX</FONT></TD>
-<TD CLASS="buy"><FONT CLASS="header">Patch</FONT></TD>
-<TD  CLASS="buy"onclick="toggle_tickle()"><FONT CLASS="header">List</FONT></TD>
+<TD CLASS="lightgrey"><FONT CLASS="header">SpaceX</FONT></TD>
+<TD CLASS="lightgrey"><FONT CLASS="header">Patch</FONT></TD>
+<TD CLASS="lightgrey" onclick="toggle_tickle()"><FONT CLASS="header">List</FONT></TD>
 </TR>
 </TABLE>
 <BR>
@@ -222,7 +215,7 @@ body {
 <TR><TD CLASS="cnt"></TD><TD>2014-07-14</TD><TD CLASS="name">OrbComm OG2 Mission 1<BR>OrbComm patch</TD><TD>Internal</TD><TD CLASS="logo"> <IMG SRC="images/orbcomm_logo_thumb.png"></TD><TD CLASS="tickle">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/orbcomm_1_orbcomm.jpg" onclick="view('orbcomm_1_orbcomm.jpg')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2014-08-05</TD><TD CLASS="name">AsiaSat 8</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="ticklehave">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/asiasat_8.png" onclick="view('asiasat_8.png')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2014-09-07</TD><TD CLASS="name">AsiaSat 6</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="ticklehave">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/asiasat_6.png" onclick="view('asiasat_6.png')" /></TD></TR>
-<TR><TD CLASS="cnt"></TD><TD>2014-09-21</TD><TD CLASS="name">CRS-4</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="ticklehave">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/crs_4.png" onclick="view('crs_4.png')" /></TD></TR>
+<TR><TD CLASS="cnt"></TD><TD>2014-09-21</TD><TD CLASS="name">CRS-4</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="ticklehave">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/crs_4.jpg" onclick="view('crs_4.jpg')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2014-09-21</TD><TD CLASS="name">CRS-4 NASA Social</TD><TD>Internal</TD><TD CLASS="logo"> <IMG SRC="images/nasa_logo_thumb.png"></TD><TD CLASS="tickle">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/crs_4_nasa_social.png" onclick="view('crs_4_nasa_social.png')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2014-09-21</TD><TD CLASS="name">NASA SPX4</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/nasa_logo_thumb.png"></TD><TD CLASS="tickle">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/nasa_spx4.png" onclick="view('nasa_spx4.png')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2014-09-21</TD><TD CLASS="name">NASA SPX4 Rodent Research 1</TD><TD>Internal</TD><TD CLASS="logo"> <IMG SRC="images/nasa_logo_thumb.png"></TD><TD CLASS="tickle">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/nasa_spx4_rodent_research_1.jpg" onclick="view('nasa_spx4_rodent_research_1.jpg')" /></TD></TR>
@@ -243,7 +236,7 @@ body {
 <TR><TD CLASS="cnt"></TD><TD>2015-06-28</TD><TD CLASS="name">NASA SPX7 IDA</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/nasa_logo_thumb.png"></TD><TD CLASS="ticklehave">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/crs_7_ida.jpg" onclick="view('crs_7_ida.jpg')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2015-07-19</TD><TD CLASS="name">NASA Social Reunion 2015</TD><TD>Internal</TD><TD CLASS="logo"> <IMG SRC="images/nasa_logo_thumb.png"></TD><TD CLASS="tickle">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/nasa_social_reunion_2015.jpg" onclick="view('nasa_social_reunion_2015.jpg')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2015-12-22</TD><TD CLASS="name">OrbComm OG2 MIssion 2</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="ticklehave">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/orbcomm_2.jpg" onclick="view('orbcomm_2.jpg')" /></TD></TR>
-<TR><TD CLASS="cnt"></TD><TD>2015-12-22</TD><TD CLASS="name">OrbComm OG2 Mission 2<BR>Landing Patch</TD><TD>Internal</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="tickle">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/orbcomm_2_landing_patch.jpg" onclick="view('orbcomm_2_landing_patch.jpg')" /></TD></TR>
+<TR><TD CLASS="cnt"></TD><TD>2015-12-22</TD><TD CLASS="name">OrbComm OG2 Mission 2<BR>Landing Patch</TD><TD>Internal</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="ticklebought">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/orbcomm_2_landing_patch.jpg" onclick="view('orbcomm_2_landing_patch.jpg')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2015-12-22</TD><TD CLASS="name">OrbComm OG2 Mission 2<BR>OrbComm patch</TD><TD>Internal</TD><TD CLASS="logo"> <IMG SRC="images/orbcomm_logo_thumb.png"></TD><TD CLASS="tickle">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/orbcomm_2_orbcomm.jpg" onclick="view('orbcomm_2_orbcomm.jpg')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2016-01-17</TD><TD CLASS="name">Jason-3</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="ticklehave">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/jason_3.jpg" onclick="view('jason_3.jpg')" /></TD></TR>
 <TR><TD CLASS="cnt"></TD><TD>2016-03-04</TD><TD CLASS="name">SES-9</TD><TD>Public</TD><TD CLASS="logo"> <IMG SRC="images/spacex_x_thumb.gif"></TD><TD CLASS="ticklehave">&nbsp;</TD><TD><IMG CLASS="patch" SRC="images/thumbs/ses_9.jpg" onclick="view('ses_9.jpg')" /></TD></TR>
@@ -262,7 +255,7 @@ body {
 <BR>
 <FONT CLASS="header">Where To Buy</FONT><BR>
 <BR>
-<TABLE CLASS="buy">
+<TABLE CLASS="patch_table">
 <TR><TD CLASS="buy"><A HREF="https://shop.spacex.com/accessories-125.html">SpaceX Official Store</A></TD></TR>
 <TR><TD CLASS="buy"><A HREF="http://stores.ebay.com.au/USAF-SPACE-PATCHES-and-MORE/SPACEX-Mission-PATCHES-/_i.html?_fsub=5330591014">USAF Patches eBay Store</A></TD></TR>
 <TR><TD CLASS="buy"><A HREF="http://capemuseumgiftshop.org/epages/061684b0-1940-4f7d-ba08-ec4c5269dfa4.sf/en_US/?ObjectPath=/Shops/061684b0-1940-4f7d-ba08-ec4c5269dfa4/Categories/Collectibles/Patches">Cape Canaveral Air &amp; Space Museum</A></TD></TR>

@@ -9,11 +9,10 @@
 // @grant       unsafeWindow
 // @grant       GM_addStyle
 // ==/UserScript==
-// "fullscreen":false
 
 document.addEventListener ("readystatechange", FireWhenReady, true);
 
-var byebye = ['e2','MTTWdiv','newsdiv','twitterbg','twitterbox','fblinkdiv','weatherdiv','plusonediv','promoboxdiv',
+var byebye = ['e2', 'MTTWdiv', 'newsdiv', 'twitterbg', 'fblinkdiv', 'weatherdiv', 'plusonediv', 'promoboxdiv',
               'adbannerdiv', 'bgbannerdiv', 'adskyleftdiv', 'bgskyleftdiv', 'adskyrightdiv', 'bgskyrightdiv',
               'headbannerdiv', 'siteselectdiv', 'partnerad1div', 'adskyright2div', 'belowMTdiv', 'footerdiv' ];
 for (var cnt = 0; cnt < byebye.length; cnt++) { nukediv(byebye[cnt]); }
@@ -32,6 +31,7 @@ if (hdiv)  { hdiv.style.position = 'static'; hdiv.style.top = 0; hdiv.style.left
 
 replace_js("fullscreen:false", "fullscreen:true");
 replace_js("\"fullscreen\":false", "\"fullscreen\":true");
+replace_js("validSite = false", "validSite = true");
 
 function replace_js(oldstr, newstr) {
     var allscripts = document.getElementsByTagName('script');
